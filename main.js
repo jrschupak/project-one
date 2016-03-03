@@ -12,4 +12,13 @@ var insertImgTag = function() {
 }
   insertImgTag();
 
-  var
+  var img = document.querySelectorAll('img');
+
+  var insertImg = function() {
+    for(var i = 0; i < img.length; i += 1) {
+      img[i].src = 'images/zombieSpace.jpeg';
+    }
+    return img[i];
+  }
+
+  insertImg();

@@ -29,9 +29,11 @@ board {
   top: 200px;
 }
 
+
+
 space {
   box-sizing: border-box;
-  width: 9%;
+  width: 10%;
   height: 10%;
   display: inline-block;
 }
