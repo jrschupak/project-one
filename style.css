@@ -29,13 +29,16 @@ board {
   top: 200px;
 }
 
-
+.row {
+  display: flex;
+  justify-content: center;
+}
 
 space {
   box-sizing: border-box;
   width: 10%;
-  height: 10%;
-  display: inline-block;
+  height: 100px;
+  background-image: url(images/zombieSpace.jpeg);
 }
 
 img {
