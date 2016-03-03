@@ -2,7 +2,7 @@ var space = document.querySelectorAll("space");
 
 
 
-var insertImg = function() {
+var insertImgTag = function() {
   for(var i = 0; i < space.length; i += 1) {
     var img = document.createElement('img');
     space[i].appendChild(img)
@@ -10,4 +10,6 @@ var insertImg = function() {
   }
   return space[i];
 }
-  insertImg();
+  insertImgTag();
+
+  var
