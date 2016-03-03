@@ -37,6 +37,20 @@ var rowDivs = function() {
 rowDivs();
 
 
+var startButton = document.querySelector('button');
+
+var start = function() {
+  startButton.addEventListener("click", function(){
+    alert("Start button works");
+    var space00 = document.querySelector('.row1 .col-1');
+    var imgTag = document.createElement("img");
+    imgTag.src = "images/player.jpg";
+    imgTag.setAttribute("class","player");
+    space00.appendChild(imgTag);
+  })
+}
+
+start();
 
 
 
