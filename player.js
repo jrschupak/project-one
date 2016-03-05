@@ -1,7 +1,7 @@
 window.onload = function () {
 
-var player = document.querySelector('.player');
-
+var player = document.querySelector('img .player');
+console.log(player);
  var moveUp = addEventListener("keydown", function(event) {
    if(event.keyCode == 87) {
      console.log("Key w event is working");
@@ -12,10 +12,17 @@ var player = document.querySelector('.player');
          console.log(boardSpacesArr[row][col]);
 
          var currentSpace = boardSpacesArr[row][col];
+         console.log("currentSpace " + boardSpacesArr[row][col]);
          if(currentSpace == player) {
+           console.log("if statement in progress");
            currentSpace.pop(player);
            newSpace = boardSpacesArr[row += 1][col];
            newSpace.push(player);
+         } else {
+           console.log("if loop is working but parameter values are off");
+           console.log("currentSpace " + currentSpace);
+           console.log(currentSpace);
+           console.log("player " + player);
          }
        }
      }
@@ -31,15 +38,16 @@ var player = document.querySelector('.player');
        console.log(boardSpacesArr[row]);
 
        for( var col = 0; col < boardSpacesArr[row].length; col += 1) {
-         console.log(boardSpacesArr[row][col]);
+         console.log("Second for loop is working");
 
           var currentSpace = boardSpacesArr[row][col];
+          console.log("currentSpace " + boardSpacesArr[row][col]);
           if(currentSpace == player) {
             currentSpace.pop(player);
             newSpace = boardSpacesArr[row += 1][col];
             newSpace.push(player);
           }
-        }
+      }
      }
     }
  });

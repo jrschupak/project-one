@@ -1,4 +1,6 @@
 var space = document.querySelectorAll("col");
+var player = document.querySelector('img.player');
+
 //
 //
 //
@@ -126,7 +128,6 @@ var start = function() {
 
     var addZombies = function() {
 
-      console.log("0_10 " + space0_10);
       var imgTag = document.createElement("img");
       imgTag.setAttribute("class", "zombie");
       imgTag.setAttribute("id", "zombie1");
@@ -135,7 +136,6 @@ var start = function() {
       var space0_9 = document.getElementById('0-9');
       console.log(imgTag);
       space0_9.appendChild(imgTag);
-      console.log(space0_10);
 
       var imgTag = document.createElement("img");
       imgTag.setAttribute("class", "zombie");
@@ -143,11 +143,11 @@ var start = function() {
       console.log("Zombie class added " + imgTag)
       imgTag.src = "images/zombieGuy.jpeg";
       console.log(imgTag);
-      var space10_0 = document.getElementById("9-0");
-      console.log("Space 10 0 " + space10_0);
-      space10_0.appendChild(imgTag);
+      var space9_0 = document.getElementById("9-0");
+      console.log("Space 9 0 " + space9_0);
+      space9_0.appendChild(imgTag);
       console.log(imgTag);
-      console.log(space10_0);
+      
 
       var imgTag = document.createElement("img");
       imgTag.setAttribute("class", "zombie");
@@ -155,9 +155,9 @@ var start = function() {
       console.log("Zombie class added " + imgTag)
       imgTag.src = "images/zombieGirl.jpg";
       console.log(imgTag);
-      var space10_10 = document.getElementById("9-9");
-      console.log(space10_10);
-      space10_10.appendChild(imgTag);
+      var space9_9 = document.getElementById("9-9");
+      console.log(space9_9);
+      space9_9.appendChild(imgTag);
 
       console.log(imgTag);
 
