@@ -45,7 +45,7 @@ board {
   justify-content: center;
 }
 
-space {
+.col {
   box-sizing: border-box;
   width: 10%;
   height: 100px;
