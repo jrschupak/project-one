@@ -120,6 +120,8 @@ var start = function() {
       imgTag.src = "images/player.jpg";
       imgTag.setAttribute("class","player");
       space0_0.appendChild(imgTag);
+    var player = document.querySelector('img.player');
+    console.log(player);
     }
 
     addPlayer();
@@ -128,26 +130,26 @@ var start = function() {
 
     var addZombies = function() {
 
-      var imgTag = document.createElement("img");
-      imgTag.setAttribute("class", "zombie");
-      imgTag.setAttribute("id", "zombie1");
-      console.log("Zombie class added " + imgTag)
-      imgTag.src = "images/zombieGuy.jpeg";
-      var space0_9 = document.getElementById('0-9');
-      console.log(imgTag);
-      space0_9.appendChild(imgTag);
+      // var imgTag = document.createElement("img");
+      // imgTag.setAttribute("class", "zombie");
+      // imgTag.setAttribute("id", "zombie1");
+      // console.log("Zombie class added " + imgTag)
+      // imgTag.src = "images/zombieGuy.jpeg";
+      // var space0_9 = document.getElementById('0-9');
+      // console.log(imgTag);
+      // space0_9.appendChild(imgTag);
 
-      var imgTag = document.createElement("img");
-      imgTag.setAttribute("class", "zombie");
-      imgTag.setAttribute("id", "zombie2");
-      console.log("Zombie class added " + imgTag)
-      imgTag.src = "images/zombieGuy.jpeg";
-      console.log(imgTag);
-      var space9_0 = document.getElementById("9-0");
-      console.log("Space 9 0 " + space9_0);
-      space9_0.appendChild(imgTag);
-      console.log(imgTag);
-      
+      // var imgTag = document.createElement("img");
+      // imgTag.setAttribute("class", "zombie");
+      // imgTag.setAttribute("id", "zombie2");
+      // console.log("Zombie class added " + imgTag)
+      // imgTag.src = "images/zombieGuy.jpeg";
+      // console.log(imgTag);
+      // var space9_0 = document.getElementById("9-0");
+      // console.log("Space 9 0 " + space9_0);
+      // space9_0.appendChild(imgTag);
+      // console.log(imgTag);
+
 
       var imgTag = document.createElement("img");
       imgTag.setAttribute("class", "zombie");
@@ -155,9 +157,9 @@ var start = function() {
       console.log("Zombie class added " + imgTag)
       imgTag.src = "images/zombieGirl.jpg";
       console.log(imgTag);
-      var space9_9 = document.getElementById("9-9");
-      console.log(space9_9);
-      space9_9.appendChild(imgTag);
+      var space5_5 = document.getElementById("5-5");
+      console.log(space5_5);
+      space5_5.appendChild(imgTag);
 
       console.log(imgTag);
 

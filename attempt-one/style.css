@@ -31,12 +31,12 @@ button {
 }
 
 board {
-  width: 80%;
+  width: 60%;
   border: 10px solid black;
   display: inline-block;
   position: relative;
   text-align: center;
-  left: 9%;
+  left: 20%;
   top: 300px;
 }
 
@@ -47,8 +47,8 @@ board {
 
 .col {
   box-sizing: border-box;
-  width: 10%;
-  height: 100px;
+  width: 16.666%;
+  height: 127.98px;
   background-image: url(images/zombieSpace.jpeg);
 }
 
