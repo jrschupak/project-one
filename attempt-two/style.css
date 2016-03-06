@@ -1,0 +1,38 @@
+body {
+  background: steelblue;
+}
+
+p {
+  font-family: Bangers;
+  font-size: 100px;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  color: #A0A0A0;
+}
+
+h3 {
+  text-align: center;
+}
+
+.board {
+  width: 95%;
+  height: 475px;
+  border: 5px solid black;
+  background-image: url(images/road.jpg);
+  background-size: 1335.94px;
+  position: relative;
+  left: 2.5%;
+  top: 150px;
+
+
+}
+
+.bike {
+  width: 150px;
+  position: absolute;
+  top: 40%;
+  right: 590px;
+
+
+}
