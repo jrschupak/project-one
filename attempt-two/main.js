@@ -1,16 +1,16 @@
 
-  console.log("main.js is loaded!")
+   console.log("main.js is loaded!")
 
-  var player = document.querySelector('.bike');
-  var board = document.querySelector('.board')
-  var right = 590;
+   var player = document.querySelector('.bike');
+   var board = document.querySelector('.board')
+   var right = 590;
 
-  var moveLeft = function() {
-    console.log("initializing moveLeft");
+   var moveLeft = function() {
+     console.log("initializing moveLeft");
 
 
-    console.log();
-    addEventListener("keydown", function(){
+     console.log();
+     addEventListener("keydown", function(){
       if(event.keyCode == 37){
         console.log("Left arrow key event Good!");
         if(right <= window.innerWidth - 221){
@@ -28,18 +28,18 @@
       }
     });
   }
-moveLeft();
+ moveLeft();
 
-  var moveRight = function() {
-    var left = 0;
-    addEventListener("keydown", function(){
-      if(event.keyCode == 39){
-        if(right <= window.innerWidth -221)
-        player.style.right = right + "px";
-        right -= 200;
-        player.style.transition = 1000;
+   var moveRight = function() {
+     var left = 0;
+     addEventListener("keydown", function(){
+       if(event.keyCode == 39){
+         if(right <= window.innerWidth -221)
+         player.style.right = right + "px";
+         right -= 200;
+         player.style.transition = 1000;
 
-      }
-    })
-  };
-  moveRight();
+       }
+     })
+   };
+   moveRight();
